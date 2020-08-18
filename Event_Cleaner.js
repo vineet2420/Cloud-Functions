@@ -2,16 +2,6 @@
 * Project specific attributes were removed to prevent tampering
 */
 
-var admin = require("firebase-admin");
-const { DatabaseBuilder } = require("firebase-functions/lib/providers/firestore");
-const functions = require('firebase-functions');
-
-// Initialize the app with a service account, granting admin privileges
-admin.initializeApp({
-    // databaseURL: "http://localhost:9000/?..."
-    databaseURL: "https://.../"
-});
-
 var eventTime;
 //current time + 1 hour
 var currentTime = new Date().getTime() + 3600000;
